@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACI,QAAS,CACT,gGAAuG,CACvG,wBACJ","file":"main.f7e0c393.chunk.css","sourcesContent":["body {\n    margin: 0;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif;\n    background-color: #f0f0f0;\n}\n"]}

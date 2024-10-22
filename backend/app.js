@@ -1,17 +1,27 @@
 // app.js
 const express = require('express');
-const connectDB = require('./db');
+const connectDB = require('./config/db');
+const dotenv = require('dotenv'); // Import dotenv
 const User = require('./models/User');
 const Chat = require('./models/Chat');
 const Channel = require('./models/Channel');
 const File = require('./models/File');
+const cors = require('cors'); // Import the cors package
 
 const app = express();
+
+// Load environment variables
+dotenv.config();
 
 // Connect to MongoDB
 connectDB();
 
+// Set Mongoose strictQuery option
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', true); // or false, based on your preference
+
 // Middleware
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 
 // Example Route
